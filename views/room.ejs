@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectUs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/room.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+    </script>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="main-block">
+            <div class="video-block" data-simplebar data-simplebar-auto-hide="false"> 
+                <div id="video-grid">    
+            
+                </div>
+            </div>
+
+            <div class="chat-block"> 
+                <div class="chats">
+                    <div class="heading" id="chat-heading"> </div>
+                    <div class="chat-content" id="list-top" data-simplebar data-simplebar-auto-hide="false">
+                         <ul class="messages">
+
+                         </ul>
+                         
+                    </div>
+                    <div class="input-message" >
+                        <input id="chat-message" type="text" placeholder="Type message here..." >
+                        <div id="send-button" onclick="sendMessage()">
+                            <i class="fas fa-arrow-alt-circle-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="participant-block">
+                <div class="chats">
+                    <div class="heading"> PARTICIPANTS </div>
+                    <button class="btn invite-button" onclick="inviteOhters()">Invite Others</button>
+                    <div id="participants-count">  </div>
+                    
+                    <div class="participant-content" data-simplebar data-simplebar-auto-hide="false">
+                        <ul class="participants-list">
+                            <li class="participant"><span> </span></li>
+
+                        </ul>  
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="media-bar" >
+            <div class="controls-block">
+                <div onclick="muteUnmute()" class="control-button mute-button">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div onclick="playStop()" class="control-button video-button">
+                    <i class="fas fa-video"></i>
+                </div>
+            </div>
+            <div class="controls-block">
+                <div onclick="hand()" class="control-button" id="hand-down">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <div class="control-button" onclick="chatSlideOut('participant-block')">
+                   <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="control-button" onclick="chatSlideOut('chat-block')">
+                   <i class="fas fa-comment-alt"></i>
+                </div>
+             </div>
+             <div class="controls-block">
+                <div class="control-button" onclick="leaveMeeting()">
+                   <div class="leave-meeting"><i class="fas fa-phone-alt" ></i> <span id="leave-text"> LEAVE</span> </div> 
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="/javascripts/firebase.js"></script>
+    
+    <script src="/javascripts/script.js"></script>
+    <script src="/javascripts/script2.js"></script>
+    
+</body>
+</html>

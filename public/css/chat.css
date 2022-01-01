@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #212529;
+}
+
+.parent {
+    overflow: hidden;
+    background:#202225;
+    width:100vw;
+    height:100vh;
+}
+
+.navigation-bar {
+    height: 6vh;
+    background: #5865F2;
+    align-items: left;
+}
+
+.btn {
+    color: white;
+    max-height : 4.6vh;
+    background:#1a1a22;
+    border-radius: 4px;
+    border: 0;
+    margin: 0.7vh 0.9vw;
+    float: right; 
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 0.5vh 1vw;
+}
+
+.btn:hover {
+    max-height : 4.8vh;
+    padding: 0.7vh 1vw;
+    margin: 0.5vh 1vw;
+    color: rgb(26, 103, 247);
+    background: white;
+}
+
+.user-name {
+    color: white;
+    background:#131417;
+    border: 0;
+    max-height: 5vh; 
+    font-size: 1rem;
+    margin: 0.5vh 1vh;
+    float: left; 
+    border-radius: 2px;
+    padding: 0.7vh 1vw;
+}
+
+.main-block {
+    display: flex;
+    background: #1e2225; 
+    margin: 0px;
+    padding: 0px;
+}
+
+.rooms-block {
+    flex: 0.23;
+    height: 94vh;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #1a1a22;
+}
+
+.create-rooms {
+    display: flex;
+    background: rgb(0 89 255);
+    padding:0.5vh 0;
+    height:6vh;
+}
+
+.room-input {
+    width: 18vw;
+    padding: 2px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 1.2vw;
+}
+
+#add-room {
+    background: #1a1a22;
+    color: white;
+    border-radius: 2px;
+    margin-left: 0.5vw;
+    padding: 0.6vw 0.7vw;
+    cursor: pointer;
+}
+
+#add-room:hover {
+    color: black;
+    background: white;
+}
+
+.rooms-list {
+    list-style: none;
+    overflow-y: auto;
+    background: #1a1d20;
+    height: 88vh;
+    padding-top: 0.5vh;
+}
+
+#room-list-id {
+    margin: 0;
+    padding: 0;
+}
+
+
+.chat-block {
+    display: flex;
+    flex-direction: column;
+    flex: 0.77;
+    height: 94vh;
+    background: #131417;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #1a1a22;
+}
+
+.chat-details {
+    background: rgb(26, 103, 247);
+    height: 6vh;
+    width: 100%;
+}
+
+.back-button {
+    background: #1a1a22;
+    color: white;
+    float: left;
+    height: 5vh;
+    margin: 0.5vh;
+    padding: 0.5vh 2vw;
+    border-radius: 2px;
+    display: none;
+    cursor: pointer;
+}
+
+.chat-name {
+    background: #1a1a22;
+    color: white;
+    float: left;
+    border-radius: 2px;
+    font-size: 1rem;
+    margin: 0.5vh 1vh;
+    padding: 0.8vh 2vw;
+    font-weight: 500;
+}
+
+
+.start-meeting-button {
+    color: white;
+    background: #1a1a22;
+    border-radius: 3px;
+    border: 0;
+    margin: 0.5vh 1vh;
+    float: right;
+    padding: 0.8vh 1.8vw;
+}
+
+.start-meeting-button:hover {
+    color: rgb(26, 103, 247);
+    background: white;
+    font-weight: 600;
+    margin: 0.3vh 0.8vh;
+    padding: 0.9vh 1.8vw;
+}
+
+.message-list {
+    background:#212529;
+    height: 80vh;
+}
+
+.rooms {
+    background:#131417;
+    float: left;
+    list-style: none;
+    width: 90%;
+    margin: 0.1vh;
+    margin-left: 0.5vw;
+    padding: 1.2vh 1vw;
+    border-radius: 6px; 
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.rooms:hover {
+    background: rgb(26, 103, 247);
+}
+
+.room-clicked {
+    background:rgb(26, 103, 247);
+    float: left;
+    list-style: none;
+    width: 90%;
+    margin: 0.1vh;
+    margin-left: 0.5vw;
+    padding: 1.2vh 1vw;
+    border-radius: 6px; 
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.invite:hover {
+    cursor: pointer;
+    background: white;
+    color: rgb(26, 103, 247);
+    font-weight: 600;
+}
+
+.leave-button {
+    cursor: pointer;
+    float: right;
+}
+
+.leave-button:hover {
+    color: rgb(26, 103, 247);
+    background: white;
+    font-weight: 500;
+    margin: 0.4vh;
+    padding: 0.9vh 2.1vw;
+    border-radius: 2px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style: none;
+    padding-left: 2px;
+    overflow: auto;
+    padding-top: 19px;
+}
+
+.me-message {
+    width: auto;
+    margin-left: auto;
+    margin-right: 1.2vw;
+    max-width: 55vw;
+    background-color: #191c1f;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-right: 4px solid #50E3C3;
+    padding: 4px 0.7vw;
+    padding-right: 1vw;
+    font-size: 0.9rem;
+}
+
+.other-message {
+    width: auto;
+    margin-right: auto;
+    margin-left: 1.2vw;
+    max-width: 55vw;
+    background-color: #16181a;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 4px 0.7vw;
+    padding-right: 1vw;
+    font-size: 0.9rem;
+    border-left: 4px solid #5663E9;
+}
+
+.admin-message {
+    width: auto;
+    max-width: 50vw;
+    margin: auto;
+    text-align: center;
+    background-color: #131417;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #1a67f7;
+    padding: 4px 0.8vw;
+    font-size: 0.8rem;
+}
+
+.input-message {
+    padding: 10px 14px;
+    display: flex;
+    bottom: 0;
+    height: 8vh;
+    background: #1e2225;
+    border: 1px solid black;
+}
+
+.input-message input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.911);
+    border-radius: 3px;
+    padding: 5px;
+    color: #F5F5F5;
+    font-size: 16px;
+}
+
+#send-button {
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 8px;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 4px;
+    width: 37px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    color: #1a67f7;
+}
+
+.sender-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.simplebar-placeholder {
+    display: none;
+}
+
+
+
+.to-right {
+    float: right;
+    margin-left: 1vw;
+}
+
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 550px) {
+    .back-button {
+        display: block;
+    }
+
+    .rooms-block {
+        flex: 1;
+        display: block;
+    }
+    
+    .chat-block {
+        flex: 1;
+        display: none;
+    }
+
+    .room-input {
+        width: 85%;
+    }
+
+    #add-room {
+        padding: 2% 3%;
+        margin-left: 2%;
+    }
+    
+    .rooms {
+        width: 94%;
+        margin: 0.5% 3%;
+        padding: 3% 5%;
+        cursor: pointer;
+    }
+
+    .room-clicked {
+        width: 94%;
+        margin: 0.5% 3%;
+        padding: 3% 5%;
+        cursor: pointer;
+    }
+
+    #room-list-id {
+        margin-top: 2vh;
+    }
+
+    .chat-details {
+        font-size: 0.9em;  
+    }   
+        
+    .chat-name {
+        padding: 0.7vh 2vw;
+        border-radius: 2px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

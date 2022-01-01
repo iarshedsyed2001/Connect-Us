@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    overflow: hidden;
+    background:#202225;
+    width:100vw;
+    height:100vh;
+}
+
+.main-block {
+    display: flex;
+}
+
+.media-bar {
+    width: 100vw;
+    display: flex;
+    height: 7vh;
+    background:#2F3136;
+    border-radius: 5px;
+    margin-top: 0.5vh;
+    justify-content: space-between;
+    color: white;
+    border: 2px solid black;
+}
+
+.video-block{
+    flex: 1;
+    width: auto;
+    display: block;
+    overflow: auto;
+    height: 92vh; 
+    background:#202225;
+    align-items: center;
+    
+}
+.chat-block{
+    flex: 0.23;
+    height: 92vh;
+    display: none; 
+    overflow: hidden;
+    background: #131417;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.participant-block{
+    flex: 0.23;
+    height: 92vh;
+    display: none; 
+    background: #131417;
+    color:white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.invite-button {
+    background: #1a67f7;
+    margin: 8px 20px;
+    color:white;
+    border: 1px solid white;
+}
+
+.invite-button:hover {
+    font-weight: bold;
+}
+
+#video-grid {
+    padding:2vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 1px;
+    height: 315px;
+    width: 475px;  
+}
+
+.video-class {
+    display: flex;
+    padding: 0;
+    position: relative;
+}
+
+.video-name {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.562);
+}
+
+.controls-block {
+    display: flex;
+}
+
+.control-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.control-button i {
+    font-size: 20px;
+}
+
+.control-button:hover {
+    background-color:#1a67f7;
+    border-radius: 3px;
+}
+
+.leave-meeting {
+    color: white;
+    border-radius: 5px;
+    background-color: #9D2F42;
+    padding: 7px 25px 5px 15px;
+    font-size: 0.92rem;
+}
+
+#leave-text {
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+}
+
+.main_header {
+    color: #F5F5F5;
+    text-align: center;
+}
+
+
+.messages {
+    color: white;
+    list-style: none;
+    padding-left: 2px;
+    overflow: auto;
+    padding-top: 20px;
+}
+
+.unmute, .stop {
+    color: #CC3B33;
+}
+
+.me-message {
+    background-color: #1b1e20;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-left: 4px solid #50E3C3;
+    margin-left: 45px;
+    margin-right: 10px;
+    padding: 4px;
+    font-size: 0.9rem;
+}
+
+.other-message {
+    background-color: #202225;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-right: 45px;
+    padding: 4px;
+    font-size: 0.9rem;
+    border-left: 4px solid #5663E9;
+}
+
+.border-blue {
+    border: 9px solid #0069DA;
+    border-radius: 7px;
+}
+
+.border-grey {
+    border: 9px solid #2F3136;
+    border-radius: 7px;
+}
+.border-gold {
+    border: 9px solid gold;
+    border-radius: 7px;
+}
+#hand-down {
+    color: white;
+}
+#hand-up {
+    color: gold;
+}
+
+.chats {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #131417;
+    overflow: hidden;
+}
+
+.heading {
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 5px;
+    border: 2px solid white;
+}
+
+.chat-content {
+    flex-grow: 1;
+    color: #ffffff;
+    display: flex;
+    background: #131417;
+    overflow: auto;
+    margin:0 0 0 3px;
+}
+
+.input-message {
+    padding: 10px 14px;
+    display: flex;
+    bottom: 0;
+}
+
+.input-message input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+#send-button {
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0px 5px;
+    color: white;
+    border-radius: 4px;
+    width: 37px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    color: #1a67f7;
+}
+
+.sender-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.participant-content {
+    flex-grow: 1;
+    color: #ffffff;
+    display: flex;
+    overflow: auto;
+    margin:0 0 0 3px;
+    background: #1A1D20;
+}
+
+.participants-list {
+    color: white;
+    list-style: none;
+    padding-left: 2px;
+    overflow: auto;
+    padding-top:10px;
+    
+}
+
+.participant {
+    
+    width: auto;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #5865F2;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 4px 0.8vw;
+    font-size: 1rem;
+}
+
+#participants-count {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    color:#1a67f7;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 3px solid #5865F2;
+    text-align: center;
+    background: black;
+}
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 550px) {
+    .chat-block, .participant-block{
+        flex: 1;
+    }
+
+    video {
+        height: 250px;
+        width: 340px;
+    }
+
+    .control-button {
+        min-width: 45px;
+        padding: 3px 2px;
+        cursor: pointer;
+    }
+
+    .leave-meeting {
+        padding: 7px 18px 5px 13px;
+        font-size: 0.85rem;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 551px) and (max-width: 800px) {
+    .chat-block,  .participant-block{
+        flex: 0.45;
+    }
+
+    video {
+        height: 265px;
+        width: 355px;
+    }
+
+    .control-button {
+        min-width: 60px;
+        padding: 5px 6px;
+        cursor: pointer;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 801px) and (max-width: 1200px){
+    .chat-block,  .participant-block{
+        flex: 0.35;
+    }
+
+    video {
+        height: 275px;
+        width: 370px;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1201px) {
+    .chat-block,  .participant-block{
+        flex: 0.23;
+    }
+}       
+
+
+.admin-message {
+    width: auto;
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    background-color: #131417;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #1a67f7;
+    padding: 4px 0.8vw;
+    font-size: 0.8rem;
+}
+
+
+
+
+

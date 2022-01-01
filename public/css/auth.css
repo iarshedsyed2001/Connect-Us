@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+  padding: 1% 5%;
+}
+
+.title-image{
+  width: 100%;
+}
+
+.title-image-signup {
+  width: 100%;
+}
+
+.contentbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contentbox .formbox {
+  padding: 10px 30px;
+  border:1px solid #607d8b;
+  border-radius: 10px;
+}
+
+.contentbox .formbox:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.contentbox .formbox .headline-login {
+  color: #607d8b;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #1a67f7;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.contentbox .formbox .headline-login .clk-login {
+  color: #607d8b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contentbox .formbox .inputbox {
+  margin-bottom: 15px;
+}
+
+.contentbox .formbox .inputbox span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #607d8b;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contentbox .formbox .inputbox input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 30px;
+}
+
+.contentbox .formbox .inputbox input[type="submit"] {
+  background: #1a67f7;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contentbox .formbox .inputbox input[type="submit"]:hover {
+  background: #0048ce;
+}
+
+.contentbox .formbox .inputbox .p1 {
+  color: #607d8b;
+  text-align: center;
+}
+
+.contentbox .formbox .inputbox .p2 {
+  color: #607d8b;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.1rem;
+  background: rgb(216, 213, 213);
+  padding: 3px 5px;
+  display: none;
+  border-radius: 8px;
+}
+
+
+.oppositeButton {
+  background:#1a67f7;
+  text-align: center;
+  margin: 1px 20px;
+  padding: 5px 0;
+  border: 1px solid #1a67f7;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.oppositeButton:hover {
+  background: #0048ce;
+}

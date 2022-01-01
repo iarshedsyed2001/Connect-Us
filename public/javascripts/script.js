@@ -42,7 +42,7 @@ firebase.auth().onAuthStateChanged((user) => {
         peer = new Peer(currentUserName, {
             path: '/peerjs',
             host: '/',
-            port: '3030' // change this to 443 for deploying 
+            port: '443' // change this to 443 for deploying 
         });
 
         //  take media permission

@@ -1,15 +1,15 @@
-# Connect Us
-This is a **Microsoft teams clone** in which more than two people can connect in real-time.
+# Connecting Peers
+By using this application more than two people can connect in real-time.
 
 # Live Demo
 #### - `Wait for the Server's reply during Signing Up` 
 #### - `Don't use Special Characters in User Name and Room Name`
-#### `App Link:` https://connect-uss.herokuapp.com   
+#### `App Link:` https://connecting-peers.herokuapp.com/   
 
 
 ### `You can also try these Demo Accounts:`
-**Email:** `akash@gmail.com` ,  **Password:** `$akash1234` <br>
-**Email:** `ankur@gmail.com` ,  **Password:** `$ankur1234`
+**Email:** `irshad@gmail.com` ,  **Password:** `$irshad` <br>
+**Email:** `hussain@gmail.com` ,  **Password:** `$hussain`
 
 
 ## Development
@@ -68,13 +68,10 @@ change `port: '443'`   **->**    `port: '3030'`
 
 # Preview
 ### `Sign Up`
-![Signup](https://user-images.githubusercontent.com/73847812/125706490-39214ebf-d67b-46a9-9a09-7f4e788dd0ac.PNG)
+![Signup](https://user-images.githubusercontent.com/54791162/147857170-55dbf18c-5a74-498a-9d0d-4cc245180d24.png)
 
 ### `Login`
-![Login](https://user-images.githubusercontent.com/73847812/125706607-f0b53838-96b1-47ae-a31a-ffa1e5ab2f5a.PNG)
+![Login](https://user-images.githubusercontent.com/54791162/147857172-6a11f67c-31a4-4e29-9de3-1ce740e89a3f.png)
 
 ### `Chat`
-![chat](https://user-images.githubusercontent.com/73847812/125707472-6758005a-8d3f-41ee-a874-d51cb8c062d9.PNG)
-
-### `Meeting`
-![Meeting](https://user-images.githubusercontent.com/73847812/125706697-2531cc2c-b898-4be5-9546-032de923ffa0.PNG)
+![Chat](https://user-images.githubusercontent.com/54791162/147857177-58e4288a-045f-4464-b9d7-d1a50006a4bc.png)
